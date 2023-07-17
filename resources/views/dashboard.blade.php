@@ -26,7 +26,7 @@
     <div id="footer-bar" class="footer-bar-1 footer-bar-detached">
         <a href="page-wallet.html"><i class="bi bi-wallet2"></i><span>Cards</span></a>
         <a href="page-activity.html"><i class="bi bi-graph-up"></i><span>Activity</span></a>
-        <a href="index-waves.html" class="circle-nav-2"><i class="bi bi-house-fill"></i><span>Home</span></a>
+        <a href="{{ route('dashboard')}}" class="circle-nav-2"><i class="bi bi-house-fill"></i><span>Home</span></a>
         <a href="page-payments.html"><i class="bi bi-receipt"></i><span>Payments</span></a>
         <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-sidebar"><i class="bi bi-three-dots"></i><span>More</span></a>
     </div>
@@ -52,7 +52,7 @@
                     <a href="#"
                     data-bs-toggle="dropdown"
                     class="icon gradient-blue shadow-bg shadow-bg-s rounded-m">
-                        <img src="images/pictures/25s.jpg" width="45" class="rounded-m" alt="img">
+                        <img src="images/pictures/default.jpg" width="45" class="rounded-m" alt="img">
                     </a>
                     <!-- Page Title Dropdown Menu-->
                     <div class="dropdown-menu">
@@ -66,7 +66,7 @@
                                     <i class="has-bg gradient-blue shadow-bg shadow-bg-xs color-white rounded-xs bi bi-graph-up"></i>
                                     <strong class="font-13">Activity</strong>
                                 </a>
-                                <a href="page-profile.html" class="list-group-item">
+                                <a href="{{ route('profile')}}" class="list-group-item">
                                     <i class="has-bg gradient-yellow shadow-bg shadow-bg-xs color-white rounded-xs bi bi-person-circle"></i>
                                     <strong class="font-13">Account</strong>
                                 </a>
@@ -101,7 +101,7 @@
                             <strong class="card-top no-click font-12 p-3 color-white font-monospace">Main Account</strong>
                             <strong class="card-bottom no-click p-3 text-start color-white font-monospace">1234 5678 1234 5661</strong>
                             <strong class="card-bottom no-click p-3 text-end color-white font-monospace">08 / 2025</strong>
-                            <div class="card-overlay bg-black opacity-50"></div>
+                            <div class="card-overlay bg-custom opacity-50"></div>
                         </div>
                     </div>
                     <div class="splide__slide">
@@ -175,7 +175,7 @@
                     <h3 class="font-16 mb-2">Recent Activity</h3>
                 </div>
                 <div class="align-self-center ms-auto">
-                    <a href="page-activity.html" class="font-12 pt-1">View All</a>
+                    <a href="{{ route('all-transactions')}}" class="font-12 pt-1">View All</a>
                 </div>
             </div>
         </div>

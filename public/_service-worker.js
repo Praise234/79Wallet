@@ -11,7 +11,10 @@ var REQUIRED_FILES = [
 	// HTML Files
 	'signin.blade.php',
 	'signup.blade.php',
-	'user-dashboard.blade.php',
+	'home.blade.php',
+	'dashboard.blade.php',
+	'profile.blade.php',
+	'menu-transfer.blade.php',
 	// Styles
 	'styles/style.css',
 	'styles/bootstrap.css',

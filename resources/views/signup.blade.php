@@ -5,7 +5,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>79-Wallet Pay with Ease</title>
+<title> Get Started</title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -41,14 +41,14 @@
                    <p class="color-white opacity-50 header-date"></p>
                    <h1 class="color-white">79-Wallet</h1>
                </div>
-               <div class="align-self-center ms-auto">
+               {{-- <div class="align-self-center ms-auto">
                    <a href="#"
                    data-bs-toggle="offcanvas"
                    data-bs-target="#menu-sidebar"
                    class="icon bg-white rounded-m">
                        <i class="bi bi-list font-20"></i>
                    </a>
-               </div>
+               </div> --}}
            </div>
        </div>
 
@@ -212,11 +212,11 @@
     <!-- Always outside the Page Content-->
 
     <!-- Main Sidebar Menu -->
-    <div id="menu-sidebar"
+    {{-- <div id="menu-sidebar"
         data-menu-active="nav-pages"
         data-menu-load="menu-sidebar.html"
         class="offcanvas offcanvas-start offcanvas-detached rounded-m">
-    </div>
+    </div> --}}
 	
 	<!-- Highlights Menu -->
 	<div id="menu-highlights"

@@ -18,9 +18,7 @@ use App\Http\Controllers\DashboardController;
 Route::get('/menu-transfer', function () {
     return view('menu-transfer');
 })->name('menu-transfer')->middleware('isLoggedIn');
-
-
-
+ 
 
 
 // Sign up routes
@@ -32,6 +30,9 @@ Route::get('/', [AuthController::class, 'showSigninForm'])->name('signin');
 Route::get('/signin', [AuthController::class, 'showSigninForm'])->name('signin');
 Route::post('/signin', [AuthController::class, 'signin'])->name('signin.post');
 Route::get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard')->middleware('isLoggedIn');
+ 
+Route::get('/profile', [DashboardController::class, 'showProfile'])->name('profile')->middleware('isLoggedIn');
+Route::get('/all-transactions', [DashboardController::class, 'showAllTransactions'])->name('all-transactions')->middleware('isLoggedIn');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 

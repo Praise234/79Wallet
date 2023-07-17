@@ -1007,10 +1007,18 @@ Item Support: https://www.enableds.com/contact/
 }
 
 .bg-black {
-  background-color: #000 !important;
+
+  background: rgb(1,1,7);
+  background: linear-gradient(69deg, rgba(1,1,7,1) 0%, rgba(70,107,252,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010107",endColorstr="#466bfc",GradientType=1);
 }
 
-.border-transparent {
+
+
+.bg-custom {
+ 
+  background: linear-gradient(69deg, rgba(29,67,65,1) 42%, rgba(24,203,8,1) 71%, rgba(0,154,255,1) 94%);
+ 
   border-color: transparent !important;
 }
 
