@@ -21,6 +21,13 @@ class DashboardController extends Controller
     
 
 
+    public function showAllCards()
+    {
+        $user = \Auth::user();
+    return view('cards', compact('user'));
+    }
+    
+
 
     public function showAllTransactions()
     {

@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
-<html lang="en" dir="rtl">
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>  All Transactions  </title>
+<title>PayApp - Finance, Banking, Wallet, Crypto Mobile PWA</title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -49,7 +49,7 @@
                     <a href="#"
                     data-bs-toggle="dropdown"
                     class="icon gradient-blue shadow-bg shadow-bg-s rounded-m">
-                        <img src="images/pictures/25s.jpg" width="45" class="rounded-m" alt="img">
+                        <img src="images/pictures/default.jpg" width="45" class="rounded-m" alt="img">
                     </a>
                     <!-- Page Title Dropdown Menu-->
                     <div class="dropdown-menu">

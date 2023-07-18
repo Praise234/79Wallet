@@ -24,10 +24,10 @@
 
     <!-- Footer Bar -->
     <div id="footer-bar" class="footer-bar-1 footer-bar-detached">
-        <a href="page-wallet.html"><i class="bi bi-wallet2"></i><span>Cards</span></a>
-        <a href="page-activity.html"><i class="bi bi-graph-up"></i><span>Activity</span></a>
+        <a href="{{ route('cards')}}"><i class="bi bi-wallet2"></i><span>Cards</span></a>
+        <a href="{{ route('all-transactions')}}"><i class="bi bi-graph-up"></i><span>Activity</span></a>
         <a href="{{ route('dashboard')}}" class="circle-nav-2"><i class="bi bi-house-fill"></i><span>Home</span></a>
-        <a href="page-payments.html"><i class="bi bi-receipt"></i><span>Payments</span></a>
+        <a href="{{ route('all-transactions')}}"><i class="bi bi-receipt"></i><span>Payments</span></a>
         <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-sidebar"><i class="bi bi-three-dots"></i><span>More</span></a>
     </div>
 
@@ -58,7 +58,7 @@
                     <div class="dropdown-menu">
                         <div class="card card-style shadow-m mt-1 me-1">
                             <div class="list-group list-custom list-group-s list-group-flush rounded-xs px-3 py-1">
-                                <a href="page-wallet.html" class="list-group-item">
+                                <a href="{{route('cards')}}" class="list-group-item">
                                     <i class="has-bg gradient-green shadow-bg shadow-bg-xs color-white rounded-xs bi bi-credit-card"></i>
                                     <strong class="font-13">Wallet</strong>
                                 </a>
@@ -162,8 +162,13 @@
                     <h6 class="font-13 opacity-80 font-500 mb-0 pt-2">Exchange</h6>
                 </div>
                 <div class="ms-auto">
+                    <a href="#"      data-bs-toggle="offcanvas"    data-bs-target="#airtime"  class="icon icon-xxl rounded-m bg-theme shadow-m"><i class="font-28 color-brown-dark bi bi-phone"></i></a>
+                    <h6 class="font-13 opacity-80 font-500 mb-0 pt-2">Airtime</h6>
+                </div>
+
+                <div class="ms-auto">
                     <a href="page-payment-bill.html" class="icon icon-xxl rounded-m bg-theme shadow-m"><i class="font-28 color-brown-dark bi bi-filter-circle"></i></a>
-                    <h6 class="font-13 opacity-80 font-500 mb-0 pt-2">Bills</h6>
+                    <h6 class="font-13 opacity-80 font-500 mb-0 pt-2">Data</h6>
                 </div>
             </div>
         </div>
@@ -228,7 +233,7 @@
         </div>
 
         <!-- Account Activity Title-->
-        <div class="content my-0 mt-n2 px-1">
+        {{-- <div class="content my-0 mt-n2 px-1">
             <div class="d-flex">
                 <div class="align-self-center">
                     <h3 class="font-16 mb-2">Account Activity</h3>
@@ -237,10 +242,10 @@
                     <a href="page-activity.html" class="font-12 pt-1">View All</a>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <!--Account Activity Notification-->
-        <div class="card card-style gradient-green shadow-bg shadow-bg-s">
+        {{-- <div class="card card-style gradient-green shadow-bg shadow-bg-s">
             <div class="content">
                 <a href="page-activity.html" class="d-flex">
                     <div class="align-self-center">
@@ -256,10 +261,10 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Send Money Title-->
-        <div class="content mb-0">
+        {{-- <div class="content mb-0">
             <div class="d-flex">
                 <div class="align-self-center">
                     <h3 class="font-16 mb-2">Send Money</h3>
@@ -268,10 +273,10 @@
                     <a href="page-payment-transfer.html" class="font-12 pt-1">View All</a>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Send Money Slider-->
-        <div class="splide quad-slider slider-no-dots slider-no-arrows slider-visible text-center" id="double-slider-2">
+        {{-- <div class="splide quad-slider slider-no-dots slider-no-arrows slider-visible text-center" id="double-slider-2">
             <div class="splide__track">
                 <div class="splide__list">
                     <div class="splide__slide">
@@ -292,7 +297,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
     </div>
     <!-- End of Page Content-->
@@ -327,14 +332,20 @@
     </div>
 
     <!-- Transfer Friends Menu -->
-    <div id="menu-friends-transfer" data-menu-load="menu-friends-transfer.html"
+    <div id="menu-friends-transfer" data-menu-load="{{route('menu-friends-transfer')}}"
         class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
     </div>
 
     <!-- Request Button Menu -->
-    <div id="menu-request" data-menu-load="menu-request.html"
+    <div id="menu-request" data-menu-load="{{route('menu-request')}}"
         class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
     </div>
+
+   <!-- Airtime Button Menu -->
+   <div id="airtime" data-menu-load="{{route('airtime')}}"
+   class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+</div>
+
 
     <!-- Exchange Button Menu -->
     <div id="menu-exchange" data-menu-load="menu-exchange.html"

@@ -129,13 +129,6 @@ Item Support: https://www.enableds.com/contact/
   color: #FFF !important;
 }
 
-
-.bg-highlight2 {
-  background-color: #079811 !important;
-  color: #FFF !important;
-}
-
-
 .border-highlight {
   border-color: #4A89DC !important;
 }
@@ -145,12 +138,6 @@ Item Support: https://www.enableds.com/contact/
   color: #FFF !important;
 }
 
-
-
-.gradient-highlight2 {
-  background-image: linear-gradient(to bottom, #1eae38, #12b406) !important;
-  color: #FFF !important;
-}
 .gradient-menu {
   background-image: linear-gradient(130deg, #7ea5f6, #ff384c) !important;
 }
@@ -1007,18 +994,10 @@ Item Support: https://www.enableds.com/contact/
 }
 
 .bg-black {
-
-  background: rgb(1,1,7);
-  background: linear-gradient(69deg, rgba(1,1,7,1) 0%, rgba(70,107,252,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010107",endColorstr="#466bfc",GradientType=1);
+  background-color: #000 !important;
 }
 
-
-
-.bg-custom {
- 
-  background: linear-gradient(69deg, rgba(29,67,65,1) 42%, rgba(24,203,8,1) 71%, rgba(0,154,255,1) 94%);
- 
+.border-transparent {
   border-color: transparent !important;
 }
 
@@ -1128,39 +1107,39 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .bg-1 {
-  background-image: url(../images/pictures/1.jpg);
+  background-image: url(../images/pictures/card.png);
 }
 
 .bg-2 {
-  background-image: url(../images/pictures/2.jpg);
+  background-image: url(../images/pictures/card.png);
 }
 
 .bg-3 {
-  background-image: url(../images/pictures/3.jpg);
+  background-image: url(../images/pictures/card.png);
 }
 
 .bg-4 {
-  background-image: url(../images/pictures/4.jpg);
+  background-image: url(../images/pictures/card.png);
 }
 
 .bg-5 {
-  background-image: url(../images/pictures/5.jpg);
+  background-image: url(../images/pictures/card.png);
 }
 
 .bg-6 {
-  background-image: url(../images/pictures/6.jpg);
+  background-image: url(../images/pictures/card.png);
 }
 
 .bg-7 {
-  background-image: url(../images/pictures/7.jpg);
+  background-image: url(../images/pictures/card.png);
 }
 
 .bg-8 {
-  background-image: url(../images/pictures/8.jpg);
+  background-image: url(../images/pictures/card.png);
 }
 
 .bg-9 {
-  background-image: url(../images/pictures/9.jpg);
+  background-image: url(../images/pictures/card.png);
 }
 
 .bg-10 {

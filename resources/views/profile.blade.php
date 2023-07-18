@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
-<html lang="en" dir="rtl">
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>Profile</title>
+<title> Profile </title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -26,7 +26,7 @@
     <div id="footer-bar" class="footer-bar-1 footer-bar-detached">
         <a href="page-wallet.html"><i class="bi bi-wallet2"></i><span>Cards</span></a>
         <a href="page-activity.html"><i class="bi bi-graph-up"></i><span>Activity</span></a>
-        <a href="index-waves.html" class="circle-nav-2"><i class="bi bi-house-fill"></i><span>Home</span></a>
+        <a href=" {{route('dashboard')}}  " class="circle-nav-2"><i class="bi bi-house-fill"></i><span>Home</span></a>
         <a href="page-payments.html"><i class="bi bi-receipt"></i><span>Payments</span></a>
         <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-sidebar"><i class="bi bi-three-dots"></i><span>More</span></a>
     </div>
@@ -39,7 +39,7 @@
            <div class="page-title d-flex">
                <div class="align-self-center me-auto">
                    <p class="color-white">Welcome Back</p>
-                   <h1 class="color-white">PayApp</h1>
+                   <h1 class="color-white"> 79 Wallet</h1>
                </div>
                <div class="align-self-center ms-auto">
                       <a href="#"
@@ -64,14 +64,14 @@
        <div class="card card-style overflow-visible mt-5">
            <div class="mt-n5"></div>
            <img src="images/pictures/default.jpg" alt="img" width="180" class="mx-auto rounded-circle mt-n5 shadow-l">
-           <h1 class="color-theme text-center font-30 pt-3 mb-0"> {{ $user->first_name}}   {{ $user->last_name}}</h1>
-           <p class="text-center font-11"><i class="bi bi-check-circle-fill color-green-dark pe-2"></i>Verified Account Holder</p>
+           <h1 class="color-theme text-center font-30 pt-3 mb-0"> {{  $user->first_name.' '. $user->last_name}}</h1>
+           <p class="text-center font-11"><i class="bi bi-check-circle-fill color-green-dark pe-2"></i> Verified Account Holder</p>
            <div class="content mt-0 mb-2">
                 <div class="list-group list-custom list-group-flush list-group-m rounded-xs">
                     <a href="#" class="list-group-item" data-bs-toggle="offcanvas" data-bs-target="#menu-information">
                         <i class="bi bi-person-circle"></i>
                         <div>Information</div>
-                        <i class="bi bi-chevron-left"></i>
+                        <i class="bi bi-chevron-right"></i>
                     </a>
                     <a href="page-activity.html" class="list-group-item">
                         <i class="bi bi-bell-fill"></i>
@@ -81,17 +81,17 @@
                     <a href="page-payments.html" class="list-group-item">
                         <i class="bi bi-credit-card"></i>
                         <div>Your Payments</div>
-                        <i class="bi bi-chevron-left"></i>
+                        <i class="bi bi-chevron-right"></i>
                     </a>
                     <a href="page-reports.html" class="list-group-item">
                         <i class="bi bi-bar-chart-fill"></i>
                         <div>Your Statistics</div>
-                        <i class="bi bi-chevron-left"></i>
+                        <i class="bi bi-chevron-right"></i>
                     </a>
                     <a href="#" class="list-group-item" data-bs-toggle="offcanvas" data-bs-target="#menu-highlights">
                         <i class="bi bi-droplet-fill"></i>
                         <div>Color Scheme</div>
-                        <i class="bi bi-chevron-left"></i>
+                        <i class="bi bi-chevron-right"></i>
                     </a>
                 </div>
            </div>
@@ -127,7 +127,7 @@
                        <a href="#"
                        data-bs-dismiss="offcanvas"
                        class="me-3 ms-0 icon icon-xxs bg-theme rounded-s shadow-m">
-                           <i class="bi bi-chevron-right color-theme font-14"></i>
+                           <i class="bi bi-chevron-left color-theme font-14"></i>
                        </a>
                    </div>
                    <div class="align-self-center me-auto">
@@ -143,34 +143,34 @@
            </div>
            <div class="content mt-0">
                <h5 class="pb-3 pt-4">Personal Information</h5>
+             
                <div class="form-custom form-label form-border mb-3 bg-transparent">
-                   <input disabled type="text" class="form-control rounded-xs" id="c1a" placeholder="{{ $user->first_name}}"/>
-                   <label for="c1a" class="form-label-always-active color-highlight">Username</label>
-                  
-               </div>
-               <div class="form-custom form-label form-border mb-3 bg-transparent">
-                   <input disabled type="text" class="form-control rounded-xs" id="c1ab" placeholder="{{ $user->first_name}}"/>
+                   <input  disabled   type="text" class="form-control rounded-xs" id="c1ab" placeholder="{{$user->first_name}}"/>
                    <label for="c1ab" class="form-label-always-active color-highlight">First Name</label>
-                    
+                 
                </div>
+
+
+
                <div class="form-custom form-label form-border mb-3 bg-transparent">
-                   <input disabled type="text" class="form-control rounded-xs" id="c1abc" placeholder="{{ $user->last_name}}"/>
+                   <input disabled  type="text" class="form-control rounded-xs" id="c1abc" placeholder="{{$user->last_name}}"/>
                    <label for="c1abc" class="form-label-always-active color-highlight">Last Name</label>
-                
+              
                </div>
-               
-
 
 
                <div class="form-custom form-label form-border mb-3 bg-transparent">
-                   <input disabled type="email" class="form-control rounded-xs" id="c1" placeholder="{{ $user->email}}"/>
-                   <label for="c1" class="color-highlight form-label-always-active">Email Address</label>
-               
+                   <input  disabled   type="text" class="form-control rounded-xs" id="c1abcd" placeholder="1 Apple Street, California, USA"/>
+                   <label for="c1abcd" class="form-label-always-active color-highlight">Address</label>
+ 
                </div>
-
-
+               <div class="form-custom form-label form-border mb-3 bg-transparent">
+                   <input   disabled  type="email" class="form-control rounded-xs" id="c1" placeholder="{{$user->email}}"/>
+                   <label for="c1" class="color-highlight form-label-always-active">Email Address</label>
+                 
+               </div>
                
-               <h5 class="pb-3 pt-4">Default Settings</h5>
+               {{-- <h5 class="pb-3 pt-4">Default Settings</h5>
                <div class="form-custom form-label form-border form-icon">
                    <i class="bi bi-calendar font-13"></i>
                    <label for="c6a" class="color-highlight form-label-always-active">Default Account</label>
@@ -180,37 +180,28 @@
                        <option value="02">Company Account</option>
                    </select>
                </div>
+                --}}
 
 
 
-               
-               <h5 class="pb-3 pt-4">Account Security</h5>
+               {{-- <h5 class="pb-3 pt-4">Account Security</h5>
                <div class="form-custom form-label form-border mb-3 bg-transparent">
                    <input type="tel" class="form-control rounded-xs" id="c21" value="+1 234 567 809"/>
                    <label for="c21" class="color-highlight form-label-always-active">Phone Number</label>
-                
-                   
+          
                </div>
                <div class="form-custom form-label form-border mb-3 bg-transparent">
                    <input type="password" class="form-control rounded-xs" id="c2" value="Old Password"/>
                    <label for="c2" class="color-highlight form-label-always-active">Current Password</label>
-               
-                   
+             
                </div>
-
-
-
                <div class="form-custom form-label form-border mb-4 bg-transparent">
                    <input type="password" class="form-control rounded-xs" id="c3" value="New Password"/>
                    <label for="c3" class="color-highlight form-label-always-active">New Password</label>
-             
+      
                </div>
-
-
-
-
                <a href="#" data-bs-dismiss="offcanvas" class="btn btn-full gradient-highlight shadow-bg shadow-bg-s mt-4">Apply Settings</a>
-           </div>
+           </div> --}}
         </div>
     </div>
 
@@ -222,3 +213,4 @@
 <script src="scripts/bootstrap.min.js"></script>
 <script src="scripts/custom.js"></script>
 </body>
+</html>

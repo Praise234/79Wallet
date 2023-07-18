@@ -1,11 +1,11 @@
 {
 "version": "1.2",
 "lang" : "en",
-"name" : "finApp",
+"name" : "PayApp",
 "scope" : "/",
 "display" : "fullscreen",
-"start_url" : "/",
-"short_name" : "finApp",
+"start_url" : "/index.html",
+"short_name" : "PayApp",
 "description" : "",
 "orientation" : "portrait",
 "background_color": "#000000",
@@ -13,7 +13,7 @@
 "generated" : "true",
   "icons": [
     {
-      "src": "app/icons/logo.png",
+      "src": "app/icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
