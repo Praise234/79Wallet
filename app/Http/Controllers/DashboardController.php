@@ -11,5 +11,27 @@ class DashboardController extends Controller
         $user = \Auth::user();
     return view('dashboard', compact('user'));
     }
+
+
+    public function showProfile()
+    {
+        $user = \Auth::user();
+    return view('profile', compact('user'));
+    }
     
+
+
+    public function showAllCards()
+    {
+        $user = \Auth::user();
+    return view('cards', compact('user'));
+    }
+    
+
+
+    public function showAllTransactions()
+    {
+        $user = \Auth::user();
+    return view('all-transactions', compact('user'));
+    }
 }
