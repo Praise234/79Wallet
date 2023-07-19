@@ -5,7 +5,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title> CARDS </title>
+<title> Cards </title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -23,69 +23,13 @@
 <div id="page">
     
     <!-- Footer Bar -->
-    <div id="footer-bar" class="footer-bar-1 footer-bar-detached">
-        <a href="page-wallet.html" class="active-nav"><i class="bi bi-wallet2"></i><span>Cards</span></a>
-        <a href="page-activity.html"><i class="bi bi-graph-up"></i><span>Activity</span></a>
-        <a href="index-waves.html" class="circle-nav-2"><i class="bi bi-house-fill"></i><span>Home</span></a>
-        <a href="page-payments.html"><i class="bi bi-receipt"></i><span>Payments</span></a>
-        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-sidebar"><i class="bi bi-three-dots"></i><span>More</span></a>
-    </div>
+    @include('footer')
 
     <!-- Page Content - Only Page Elements Here-->
     <div class="page-content footer-clear">
 
         <!-- Page Title-->
-        <div class="pt-3">
-            <div class="page-title d-flex">
-                <div class="align-self-center me-auto">
-                    <p class="color-highlight">Hello {{$user->first_name}}</p>
-                    <h1 class="color-theme">Cards</h1>
-                </div>
-                <div class="align-self-center ms-auto">
-                    <a href="#"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#menu-add-card"
-                    class="icon gradient-green color-white shadow-bg shadow-bg-xs rounded-m">
-                        <i class="bi bi-plus-circle font-17"></i>
-                    </a>
-                    <a href="#"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#menu-notifications"
-                    class="icon gradient-blue color-white shadow-bg shadow-bg-xs rounded-m">
-                        <i class="bi bi-bell-fill font-17"></i>
-                        <em class="badge bg-red-dark color-white scale-box">3</em>
-                    </a>
-                    <a href="#"
-                    data-bs-toggle="dropdown"
-                    class="icon gradient-blue shadow-bg shadow-bg-s rounded-m">
-                        <img src="images/pictures/25s.jpg" width="45" class="rounded-m" alt="img">
-                    </a>
-                    <!-- Page Title Dropdown Menu-->
-                    <div class="dropdown-menu">
-                        <div class="card card-style shadow-m mt-1 me-1">
-                            <div class="list-group list-custom list-group-s list-group-flush rounded-xs px-3 py-1">
-                                <a href="page-wallet.html" class="list-group-item">
-                                    <i class="has-bg gradient-green shadow-bg shadow-bg-xs color-white rounded-xs bi bi-credit-card"></i>
-                                    <strong class="font-13">Wallet</strong>
-                                </a>
-                                <a href="page-activity.html" class="list-group-item">
-                                    <i class="has-bg gradient-blue shadow-bg shadow-bg-xs color-white rounded-xs bi bi-graph-up"></i>
-                                    <strong class="font-13">Activity</strong>
-                                </a>
-                                <a href="page-profile.html" class="list-group-item">
-                                    <i class="has-bg gradient-yellow shadow-bg shadow-bg-xs color-white rounded-xs bi bi-person-circle"></i>
-                                    <strong class="font-13">Account</strong>
-                                </a>
-                                <a href="page-signin-1.html" class="list-group-item">
-                                    <i class="has-bg gradient-red shadow-bg shadow-bg-xs color-white rounded-xs bi bi-power"></i>
-                                    <strong class="font-13">Log Out</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+ @include('header')
         
         <!-- Card Stack - The Stack Height Below will be the card height-->
         <div class="card-stack" data-stack-height="180">
@@ -377,7 +321,7 @@
     </div>
     
     <!-- Notifications Bell -->
-    <div id="menu-notifications" data-menu-load="menu-notifications.html"
+    <div id="menu-notifications" data-menu-load="{{route('menu-notifications')}}"
         class="offcanvas offcanvas-top offcanvas-detached rounded-m">
     </div>
 

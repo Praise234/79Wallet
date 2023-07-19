@@ -23,13 +23,7 @@
 <div id="page">
 
     <!-- Footer Bar -->
-    <div id="footer-bar" class="footer-bar-1 footer-bar-detached">
-        <a href="page-wallet.html"><i class="bi bi-wallet2"></i><span>Cards</span></a>
-        <a href="page-activity.html"><i class="bi bi-graph-up"></i><span>Activity</span></a>
-        <a href=" {{route('dashboard')}}  " class="circle-nav-2"><i class="bi bi-house-fill"></i><span>Home</span></a>
-        <a href="page-payments.html"><i class="bi bi-receipt"></i><span>Payments</span></a>
-        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-sidebar"><i class="bi bi-three-dots"></i><span>More</span></a>
-    </div>
+   @include('footer')
 
     <!-- Page Content - Only Page Elements Here-->
     <div class="page-content footer-clear">
@@ -70,19 +64,22 @@
                 <div class="list-group list-custom list-group-flush list-group-m rounded-xs">
                     <a href="#" class="list-group-item" data-bs-toggle="offcanvas" data-bs-target="#menu-information">
                         <i class="bi bi-person-circle"></i>
-                        <div>Information</div>
+                        <div>Account Information</div>
                         <i class="bi bi-chevron-right"></i>
                     </a>
+
+
+
                     <a href="page-activity.html" class="list-group-item">
                         <i class="bi bi-bell-fill"></i>
-                        <div>Notifications</div>
-                        <span class="badge rounded-xl">3</span>
+                        <div>Account Tier</div>
+                        <span class="badge rounded-xl">1</span>
                     </a>
-                    <a href="page-payments.html" class="list-group-item">
+                    {{-- <a href="page-payments.html" class="list-group-item">
                         <i class="bi bi-credit-card"></i>
                         <div>Your Payments</div>
                         <i class="bi bi-chevron-right"></i>
-                    </a>
+                    </a> --}}
                     <a href="page-reports.html" class="list-group-item">
                         <i class="bi bi-bar-chart-fill"></i>
                         <div>Your Statistics</div>

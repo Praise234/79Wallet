@@ -22,14 +22,7 @@
 <!-- Page Wrapper-->
 <div id="page">
 
-    <!-- Footer Bar -->
-    {{-- <div id="footer-bar" class="footer-bar-1 footer-bar-detached">
-        <a href="page-wallet.html" class="active-nav"><i class="bi bi-wallet2"></i><span>Cards</span></a>
-        <a href="page-activity.html"><i class="bi bi-graph-up"></i><span>Activity</span></a>
-        <a href="index-waves.html" class="circle-nav-2"><i class="bi bi-house-fill"></i><span>Home</span></a>
-        <a href="page-payments.html"><i class="bi bi-receipt"></i><span>Payments</span></a>
-        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-sidebar"><i class="bi bi-three-dots"></i><span>More</span></a>
-    </div> --}}
+    
 
     <!-- Page Content - Only Page Elements Here-->
     <div class="page-content footer-clear">
@@ -41,14 +34,7 @@
                    <p class="color-white opacity-50 header-date"></p>
                    <h1 class="color-white">79 Wallet</h1>
                </div>
-               {{-- <div class="align-self-center ms-auto">
-                   <a href="#"
-                   data-bs-toggle="offcanvas"
-                   data-bs-target="#menu-sidebar"
-                   class="icon bg-white rounded-m">
-                       <i class="bi bi-list font-20"></i>
-                   </a>
-               </div> --}}
+              
            </div>
        </div>
 
@@ -72,9 +58,9 @@
      @endif
 
      @if(Session::has('error'))
-     <div class="alert alert-info alert-dismissible fade show">
+     <div class="alert alert-danger alert-dismissible fade show rounded-3 m-3">
          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-         <strong> {{ Session::get('success') }}</strong>  
+         <strong> {{ Session::get('error') }}</strong>  
        </div>
          
   @endif

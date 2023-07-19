@@ -23,6 +23,12 @@ Route::get('/menu-transfer', function () {
 })->name('menu-transfer')->middleware('isLoggedIn');
  
 
+//transfer
+Route::get('/menu-notificatiions', function () {
+    return view('menu-notifications');
+})->name('menu-notifications')->middleware('isLoggedIn');
+ 
+
 // not sure what this is but it  probably means transfer within 79 wallet
 Route::get('/menu-friends-transfer', function () {
     return view('menu-friends-transfer');
